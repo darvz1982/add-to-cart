@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <title>Document</title>
+
+        <style>
+            body {background-color: aqua;}
+            .toolbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 20px;
+                background-color: aquamarine;
+            }
+
+            .products {
+                display: flex;
+                justify-content: center;
+                background-color: rgb(126, 176, 209);
+            }
+            .product {
+                width: 300px;
+                border: 2px solid greenyellow;
+                margin: 10px;
+                padding: 10px;
+                background-color: aliceblue;
+            }
+
+            .added {
+                color: white;
+                background-color: red;
+            }
+
+            .addCart {
+                background: rgb(214, 213, 213);
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                margin: 1em;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="toolbar">
+            <h1 class="brand">Shop</h1>
+            <p>
+                <a href="cart.html">
+                    Cart items:
+                    <span id="count">0</span>, Price:
+                    <span id="sum">0</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col col-sm col-xl">
+        <div class="products">
+            <div class="product">
+                <img src ="https://www.thesprucepets.com/thmb/Wh_mSm5UjL7OOvqsyQgXgFatshc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="cat1" height="150" width="140">
+                <h4>Product 1</h4>
+                <p>Price: 2000</p>
+                <a class= "addCart cart1" href="#"><button  data-id="1" data-price="2000" data-title="Product one">Add to cart</button></a>
+            </div>
+
+            <div class="product">
+                <img src ="https://www.thesprucepets.com/thmb/Wh_mSm5UjL7OOvqsyQgXgFatshc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="cat1" height="150" width="140">
+                <h4>Product 2</h4>
+                <p>Price: 3000</p>
+                <a class= "addCart cart2" href="#"><button data-id="2" data-price="3000" data-title="Product two">Add to cart</button></a>
+            </div>
+
+            <div class="product">
+                <img src ="https://www.thesprucepets.com/thmb/Wh_mSm5UjL7OOvqsyQgXgFatshc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="cat1" height="150" width="140">
+                <h4>Product 3</h4>
+                <p>Price: 6000</p>
+                <a class= "addCart cart3" href="#"><button  data-id="3" data-price="6000" data-title="Product three">Add to cart</button></a>
+            </div>
+
+            <div class="product">
+                <img src ="https://www.thesprucepets.com/thmb/Wh_mSm5UjL7OOvqsyQgXgFatshc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg" alt="cat1" height="150" width="140">
+                <h4>Product 4</h4>
+                <p>Price: 1000</p>
+                <a class= "addCart cart1" href="#"><button data-id="4" data-price="1000" data-title="Product four">Add to cart</button></a>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
